@@ -1,7 +1,6 @@
 package demo
 
 import com.rebiekong.bdt.visualization.writer.{BasicTableModel, PhoenixWriter}
-import models.{InstallModel, SoftwareLogModel}
 import org.apache.spark.sql.SparkSession
 
 import scala.collection.mutable.ListBuffer
@@ -16,8 +15,7 @@ object DemoApp extends App {
 
   val models = ListBuffer.empty[BasicTableModel]
 
-  models.append(new SoftwareLogModel())
-  models.append(new InstallModel())
+  models.append(new DemoModel())
 
   val writer = new PhoenixWriter(models: _*)
   writer.run("TEST_TABLE", "hbase-master:2181")
