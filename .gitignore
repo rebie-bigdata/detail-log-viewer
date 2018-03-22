@@ -1,0 +1,7 @@
+.idea
+**/*.iml
+core-site.xml
+hdfs-site.xml
+hive-site.xml
+hbase-site.xml
+target

@@ -1,0 +1,11 @@
+Fuck that!
+
+NO JAVA IN THIS PROGRAM
+```
+create table TEST_TABLE (
+id VARCHAR NOT NULL,
+server_date timestamp NOT NULL,
+sign varchar NOT NULL
+CONSTRAINT LOG_PK PRIMARY KEY (id ASC,server_date ASC ROW_TIMESTAMP,sign)
+) SALT_BUCKETS=16;
+```
